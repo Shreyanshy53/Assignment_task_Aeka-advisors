@@ -116,7 +116,7 @@ Destination                 Rating     Popularity
 Howrah Bridge               4.6        1.20
 Dakshineswar Kali Temple    4.7        0.82
 Victoria Memorial           4.6        0.73
-Belur Math                  4.7         0.47
+Belur Math                  4.7        0.47
 Science City Kolkata        4.4        0.88
 ```
 
