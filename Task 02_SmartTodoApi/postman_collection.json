@@ -1,0 +1,457 @@
+{
+	"info": {
+		"_postman_id": "1f14201f-e167-4b77-b3be-9e30c58a0272",
+		"name": "My Collection",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49022358",
+		"_collection_link": "https://shre3250-7661816.postman.co/workspace/Shreyansh-Yadav's-Workspace~085c94e1-dda7-49d0-84cd-f58bb7e5e99a/collection/49022358-1f14201f-e167-4b77-b3be-9e30c58a0272?action=share&source=collection_link&creator=49022358"
+	},
+	"item": [
+		{
+			"name": "SmartTodo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWE3MjI0NDBkN2VlNWY4NWFjMWUwNyIsImlhdCI6MTc2NzUzNTM5MSwiZXhwIjoxNzY3NjIxNzkxfQ.t3iH9btguJgifFHs0mdvJCDFzug_aBCuMFBu2JBCSrs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWE3MjI0NDBkN2VlNWY4NWFjMWUwNyIsImlhdCI6MTc2NzUzNTM5MSwiZXhwIjoxNzY3NjIxNzkxfQ.t3iH9btguJgifFHs0mdvJCDFzug_aBCuMFBu2JBCSrs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Task Updated from Postman\",\r\n  \"completed\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/tasks/695a746240d7ee5f85ac1e0f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"tasks",
+						"695a746240d7ee5f85ac1e0f"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Auth - Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"testuser11\",\r\n  \"email\": \"test11@test.com\",\r\n  \"password\": \"123456\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a-nMoFx54+czTntmSLXl3mqIsZV4A\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Jan 2026 13:59:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User registered successfully\"\n}"
+				},
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"test1@test.com\",\r\n  \"password\": \"123456\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "183"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b7-y5BgOrGWD/7BfWDcxiVFkd8TkTM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Jan 2026 14:03:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWE3MjI0NDBkN2VlNWY4NWFjMWUwNyIsImlhdCI6MTc2NzUzNTM5MSwiZXhwIjoxNzY3NjIxNzkxfQ.t3iH9btguJgifFHs0mdvJCDFzug_aBCuMFBu2JBCSrs\"\n}"
+				},
+				{
+					"name": "Tasks - Create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWE3MjI0NDBkN2VlNWY4NWFjMWUwNyIsImlhdCI6MTc2NzUzNTM5MSwiZXhwIjoxNzY3NjIxNzkxfQ.t3iH9btguJgifFHs0mdvJCDFzug_aBCuMFBu2JBCSrs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"First Task from Postman\",\r\n  \"completed\": false\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "206"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ce-sQxYpCcZtAdO/qZWoKLeH8Wzw+k\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Jan 2026 14:08:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"title\": \"First Task from Postman\",\n    \"completed\": false,\n    \"user\": \"695a722440d7ee5f85ac1e07\",\n    \"_id\": \"695a746240d7ee5f85ac1e0f\",\n    \"createdAt\": \"2026-01-04T14:08:34.959Z\",\n    \"updatedAt\": \"2026-01-04T14:08:34.959Z\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "Tasks - Get All",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWE3MjI0NDBkN2VlNWY4NWFjMWUwNyIsImlhdCI6MTc2NzUzNTM5MSwiZXhwIjoxNzY3NjIxNzkxfQ.t3iH9btguJgifFHs0mdvJCDFzug_aBCuMFBu2JBCSrs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"First Task from Postman\",\r\n  \"completed\": false\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "208"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d0-Kzm07iWlyfBu20v5DWmhMVnMlww\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Jan 2026 14:12:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"695a746240d7ee5f85ac1e0f\",\n        \"title\": \"First Task from Postman\",\n        \"completed\": false,\n        \"user\": \"695a722440d7ee5f85ac1e07\",\n        \"createdAt\": \"2026-01-04T14:08:34.959Z\",\n        \"updatedAt\": \"2026-01-04T14:08:34.959Z\",\n        \"__v\": 0\n    }\n]"
+				},
+				{
+					"name": "Tasks - Update",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWE3MjI0NDBkN2VlNWY4NWFjMWUwNyIsImlhdCI6MTc2NzUzNTM5MSwiZXhwIjoxNzY3NjIxNzkxfQ.t3iH9btguJgifFHs0mdvJCDFzug_aBCuMFBu2JBCSrs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Task Updated from Postman\",\r\n  \"completed\": true\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/tasks/695a746240d7ee5f85ac1e0f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"tasks",
+								"695a746240d7ee5f85ac1e0f"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "207"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cf-Ckq0wQa6FnBXykT9MzJb0hJi/Tw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Jan 2026 14:14:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"695a746240d7ee5f85ac1e0f\",\n    \"title\": \"Task Updated from Postman\",\n    \"completed\": true,\n    \"user\": \"695a722440d7ee5f85ac1e07\",\n    \"createdAt\": \"2026-01-04T14:08:34.959Z\",\n    \"updatedAt\": \"2026-01-04T14:14:09.149Z\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "Tasks - Delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWE3MjI0NDBkN2VlNWY4NWFjMWUwNyIsImlhdCI6MTc2NzUzNTM5MSwiZXhwIjoxNzY3NjIxNzkxfQ.t3iH9btguJgifFHs0mdvJCDFzug_aBCuMFBu2JBCSrs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Task Updated from Postman\",\r\n  \"completed\": true\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/tasks/695a746240d7ee5f85ac1e0f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"tasks",
+								"695a746240d7ee5f85ac1e0f"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a-EXuvryuVXWlMt0iHutTdXWDMZ38\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Jan 2026 14:14:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Task deleted\"\n}"
+				}
+			]
+		}
+	]
+}
