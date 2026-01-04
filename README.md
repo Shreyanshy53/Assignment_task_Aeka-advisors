@@ -57,14 +57,14 @@ A task management application focusing on application logic and usability.
 ### 🔹 Task 4: Weekend Getaway Ranker (Data Engineering)  
 A Python + Pandas based recommendation system that ranks weekend travel destinations based on ratings and popularity.
 
-📂 Folder: `Task 05_Weekend-Getaway-Ranker/`
+📂 Folder: `Task 04_Weekend-Getaway-Ranker/`
 
 ---
 
 ### 🔹 Task 5: Spotify Lyric Search  
 A project that searches and displays song lyrics using external data sources.
 
-📂 Folder: `Task 04_Spotify_Lyric_Search/`
+📂 Folder: `Task 05_Spotify_Lyric_Search/`
 
 ---
 
