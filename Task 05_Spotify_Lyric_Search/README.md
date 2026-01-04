@@ -69,6 +69,7 @@ However, the Top-5 accuracy of 61% demonstrates strong retrieval performance.
 
 ### 1. Clone the Repository
 git clone https://github.com/Shreyanshy53/Spotify_Lyric_Search.git 
+
 cd spotify-lyric-search
 
 ### 2. Create Virtual Environment (Optional)
